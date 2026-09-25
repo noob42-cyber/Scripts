@@ -3,31 +3,30 @@ import secrets
 
 usr = secrets.randbelow(52)
 print(usr)
+alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
 
 def Ceasar_Cipher_Encryption(text):
     result = ""
-
     for char in text:
         if char.isalpha():
-            if char.isupper():
-                new_index = (ord(char)- ord('A') + usr)%52
-            if char.islower():
-                new_index = (ord(char) - ord('a') +26 + usr)%52
-            new_char = chr(ord('A') + new_index + 7)
+            index = alphabet.index(char)
+            new_index = (index + usr)%52
+            new_char = alphabet[new_index]
             result += new_char
         else:
             result += char
     return result
-
 
 def Caesar_Cipher_Decryption(text):
     result = ""
 
     for char in text:
         if char.isalpha():
-            new_index = (ord(char) - ord('A') - usr)%52
-            new_char = chr(ord('A') + new_index)
+            index = alphabet.index(char)
+            new_index = (index-usr)%52
+            new_char = alphabet[new_index]
             result += new_char
+
         else:
             result += char
 
