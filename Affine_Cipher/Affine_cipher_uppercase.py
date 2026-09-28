@@ -1,7 +1,7 @@
 import sys
 
 while True:    
-    a = 2
+    a = 3
     try:
         b = int(input("Enter the no,from 0 to 25:- "))
         if b<0 or b>25:
