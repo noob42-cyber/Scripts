@@ -28,9 +28,9 @@ def affine_cipher_encryption(text):
     return result
 def affine_cipher_decryption(text):
     result =""
+    a_inverse = modular_inverse(a)
     for char in text:
         if char.isalpha():
-            a_inverse = modular_inverse(a)
             new_index = (a_inverse*(ord(char)-ord('A')-b))%26
             new_char = chr(ord('A')+new_index)
             result += new_char
