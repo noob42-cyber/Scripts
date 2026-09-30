@@ -1,7 +1,12 @@
 import sys
 
+a = 3
+def modular_inverse(a):
+    for i in range(1,26):
+        if (a*i)%26 == 1:
+            return i
+    return None
 while True:    
-    a = 2
     try:
         b = int(input("Enter the no,from 0 to 25:- "))
         if b<0 or b>25:
@@ -25,7 +30,8 @@ def affine_cipher_decryption(text):
     result =""
     for char in text:
         if char.isalpha():
-            new_index = ((ord(char)-ord('A')-b)/a)%26
+            a_inverse = modular_inverse(a)
+            new_index = (a_inverse*(ord(char)-ord('A')-b))%26
             new_char = chr(ord('A')+new_index)
             result += new_char
         else:
