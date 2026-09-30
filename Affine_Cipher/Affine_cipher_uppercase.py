@@ -7,10 +7,6 @@ def modular_inverse(a):
             return i
     return None
 while True:    
-<<<<<<< HEAD
-=======
-    a = 3
->>>>>>> 582372c3b85f897b32b83d18670cd06376594cbd
     try:
         b = int(input("Enter the no,from 0 to 25:- "))
         if b<0 or b>25:
