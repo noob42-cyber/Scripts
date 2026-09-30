@@ -63,10 +63,10 @@ If:
 
 then:
 
-A → F
-B → G
-...
-Z → e
+A → F  
+B → G  
+...  
+Z → e  
 
 The exact output varies because the key is randomly generated.
 
@@ -82,14 +82,14 @@ Therefore, this cipher should not be used for protecting real-world sensitive in
 
 For a message containing n characters:
 
-Time:  O(n)
+Time:  O(n)  
 Space: O(n)
 
 ___
 
 ## Refrences
 
-[Caesar Cipher](https://en.wikipedia.org/wiki/Caesar_cipher) <br>
+[Caesar Cipher](https://en.wikipedia.org/wiki/Caesar_cipher)  
 [Python Documentation - `secrets` module](https://docs.python.org/3/library/secrets.html)
 
 
