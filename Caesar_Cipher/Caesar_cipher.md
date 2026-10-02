@@ -40,7 +40,7 @@ ___
 
 # Weakness
 
-It is not cryptographically secure because due to small key space of 26,make the brute force in it feasible and also due to one to one mapping of characters,there is also a feasible chance of frequency analysis
+It is not cryptographically secure because due to the small key space of 26,make the brute force in it feasible and also due to one to one mapping of characters,there is also a feasible chance of frequency analysis
 
 
 
