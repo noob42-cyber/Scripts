@@ -8,7 +8,7 @@ ___
 
 ## History
 
-It is named after Roman Leader Julius Caeser who shift letter by 3 to protect his  military secrets 
+It is named after the Roman Leader Julius Caeser who shift letter by 3 to protect his  military secrets 
 
 ___
 
