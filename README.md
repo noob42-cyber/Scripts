@@ -35,6 +35,12 @@ Planned areas include:
 
  ___ 
 
+## Installation and Usage
+
+```bash
+git clone https://github.com/noob42-cyber/Scripts
+cd Scripts
+```
 ## Note
 
 These scripts are educational projects created while learning cybersecurity and cryptography.
