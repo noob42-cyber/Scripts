@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=65.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cryptools"
+version = "0.1.0"
+description = "Educational implementations of classical cryptography algorithms from scratch"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [{name = "noob42-cyber"}]
+keywords = ["cryptography", "education", "ciphers", "encoding"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Education",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+]
+requires-python = ">=3.9"
+
+[project.urls]
+Homepage = "https://github.com/noob42-cyber/Scripts"
+Documentation = "https://github.com/noob42-cyber/Scripts/tree/main/docs"
+Repository = "https://github.com/noob42-cyber/Scripts"
+"Bug Tracker" = "https://github.com/noob42-cyber/Scripts/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
